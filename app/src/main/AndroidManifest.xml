@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smartatt"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartAttendance">
+        <activity
+            android:name=".PDFGenerator"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceDetails"
+            android:exported="false" />
+        <activity
+            android:name=".MessageWindow2"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardTeacher"
+            android:exported="true" />
+        <activity
+            android:name=".WinSelectUser"
+            android:exported="false" />
+        <activity
+            android:name=".MessageWindow"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationFormTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationFormStudent"
+            android:exported="false" />
+        <activity
+            android:name=".QRCode"
+            android:exported="false" />
+        <activity
+            android:name=".LoginTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".LoginStudent"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardStudent"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

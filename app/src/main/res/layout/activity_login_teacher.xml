@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/teacher" />
+
+    <EditText
+        android:id="@+id/tea_UID"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/boxborder"
+        android:fontFamily="@font/roboto"
+        android:hint="Teacher UID"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/app_color"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/login_tea_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/boxborder"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/app_color"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/tea_UID"
+        app:layout_constraintStart_toStartOf="@+id/tea_UID"
+        app:layout_constraintTop_toBottomOf="@+id/tea_UID" />
+
+    <TextView
+        android:id="@+id/frgt_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Forgot Password"
+        android:textColor="@color/app_color"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_tea_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_tea_password" />
+
+    <Button
+        android:id="@+id/btn_login_tea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/app_color"
+        android:fontFamily="@font/roboto"
+        android:text="Login"
+        android:textAllCaps="false"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_tea_password"
+        app:layout_constraintStart_toStartOf="@+id/login_tea_password"
+        app:layout_constraintTop_toBottomOf="@+id/frgt_pass" />
+
+    <ProgressBar
+        android:id="@+id/TeaProgessBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:indeterminateTint="@color/app_color"
+        android:max="100"
+        android:progress="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_tea" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

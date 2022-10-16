@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/student"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/std_PRN"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/boxborder"
+        android:hint="Student PRN"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/app_color"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/login_std_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/boxborder"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName|textPassword"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/app_color"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/std_PRN"
+        app:layout_constraintStart_toStartOf="@+id/std_PRN"
+        app:layout_constraintTop_toBottomOf="@+id/std_PRN"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_login_std"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#233470"
+        android:fontFamily="@font/roboto"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_std_password"
+        app:layout_constraintStart_toStartOf="@+id/login_std_password"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Forgot Password"
+        android:textColor="@color/app_color"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_std_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_std_password" />
+
+    <ProgressBar
+        android:id="@+id/StdProgessBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:indeterminateTint="@color/app_color"
+        android:max="100"
+        android:progress="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_std" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

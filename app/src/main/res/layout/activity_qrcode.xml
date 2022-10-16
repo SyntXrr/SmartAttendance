@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".QRCode">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/app_color"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/gen_qr"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/class_dt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="class Deatils"
+        android:textColor="@color/app_color"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <Button
+        android:id="@+id/btn_gotoAttDash"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/app_color"
+        android:fontFamily="@font/roboto"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/class_dt"
+        app:layout_constraintStart_toStartOf="@+id/class_dt"
+        app:layout_constraintTop_toBottomOf="@+id/class_dt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
